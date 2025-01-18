@@ -2,13 +2,13 @@
 
 ## CRUD Project in Elixir
 
-This project is a CRUD (Create, Read, Update, Delete) application built with Elixir, WebAssembly, and an Oracle database connection. The project demonstrates how to create a web application with Elixir, connect it to an Oracle database, and run it using WebAssembly.
+This project is a CRUD (Create, Read, Update, Delete) application built with Elixir, WebAssembly, and an SQLite database connection. The project demonstrates how to create a web application with Elixir, connect it to an SQLite database, and run it using WebAssembly.
 
-## Setting Up the Oracle Database Connection
+## Setting Up the SQLite Database Connection
 
-To set up the Oracle database connection, follow these steps:
+To set up the SQLite database connection, follow these steps:
 
-1. Install the Oracle Instant Client and SQL*Plus.
+1. Install the SQLite database.
 2. Configure the database connection settings in the `config/config.exs` file.
 3. Create the necessary database tables and schema.
 

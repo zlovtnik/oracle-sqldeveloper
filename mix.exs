@@ -21,7 +21,7 @@ defmodule OracleSqldeveloper.MixProject do
   defp deps do
     [
       {:ecto_sql, "~> 3.6"},
-      {:oracle_ecto, "~> 0.1.0"},
+      {:ecto_sqlite3, "~> 0.7.0"},
       {:phoenix, "~> 1.5.9"},
       {:phoenix_html, "~> 2.14"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
