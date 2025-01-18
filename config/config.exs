@@ -1,4 +1,4 @@
-use Mix.Config
+import Config
 
 config :oracle_sqldeveloper, OracleSqldeveloper.Repo,
   database: "oracle_sqldeveloper.sqlite3",
