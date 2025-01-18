@@ -1,0 +1,15 @@
+<%= form_for @changeset, "#", fn f -> %>
+  <div>
+    <%= label f, :name %>
+    <%= text_input f, :name %>
+  </div>
+
+  <div>
+    <%= label f, :description %>
+    <%= text_input f, :description %>
+  </div>
+
+  <div>
+    <%= submit "Save" %>
+  </div>
+<% end %>

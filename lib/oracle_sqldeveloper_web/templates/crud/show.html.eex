@@ -1,0 +1,19 @@
+<h1>Show Item</h1>
+
+<div>
+  <strong>ID:</strong>
+  <%= @item.id %>
+</div>
+
+<div>
+  <strong>Name:</strong>
+  <%= @item.name %>
+</div>
+
+<div>
+  <strong>Description:</strong>
+  <%= @item.description %>
+</div>
+
+<%= link "Edit", to: Routes.crud_path(@conn, :edit, @item) %> |
+<%= link "Back", to: Routes.crud_path(@conn, :index) %>
