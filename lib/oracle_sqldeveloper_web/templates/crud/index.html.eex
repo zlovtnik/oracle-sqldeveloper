@@ -1,0 +1,28 @@
+<h1>Listing Items</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= for item <- @items do %>
+      <tr>
+        <td><%= item.id %></td>
+        <td><%= item.name %></td>
+        <td><%= item.description %></td>
+        <td>
+          <%= link "Show", to: Routes.crud_path(@conn, :show, item) %>
+          <%= link "Edit", to: Routes.crud_path(@conn, :edit, item) %>
+          <%= link "Delete", to: Routes.crud_path(@conn, :delete, item), method: :delete, data: [confirm: "Are you sure?"] %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link "New Item", to: Routes.crud_path(@conn, :new) %>
