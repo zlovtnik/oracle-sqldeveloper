@@ -36,6 +36,7 @@ defmodule TasksAppWeb do
     end
   end
 
+  @spec controller() :: {:__block__, [], [...]}
   def controller do
     quote do
       use Phoenix.Controller,
@@ -50,6 +51,7 @@ defmodule TasksAppWeb do
     end
   end
 
+  @spec live_view() :: {:__block__, [], [...]}
   def live_view do
     quote do
       use Phoenix.LiveView,
@@ -67,6 +69,7 @@ defmodule TasksAppWeb do
     end
   end
 
+  @spec html() :: {:__block__, [], [...]}
   def html do
     quote do
       use Phoenix.Component
