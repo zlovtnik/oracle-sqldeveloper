@@ -1,13 +1,21 @@
 # The directory Mix will write compiled artifacts to.
 /_build/
 
+/build/
+
 # If you run "mix test --cover", coverage assets end up here.
+/cover/
+
 /cover/
 
 # The directory Mix downloads your dependencies sources to.
 /deps/
 
+/deps/
+
 # Where 3rd-party dependencies like ExDoc output generated docs.
+/doc/
+
 /doc/
 
 # Ignore .fetch files in case you like to edit your project deps locally.
@@ -22,6 +30,8 @@ erl_crash.dump
 # Temporary files, for example, from tests.
 /tmp/
 
+/tmp/
+
 # Ignore package tarball (built via "mix hex.build").
 tasks_app-*.tar
 
@@ -34,4 +44,3 @@ tasks_app-*.tar
 # In case you use Node.js/npm, you want to ignore these.
 npm-debug.log
 /assets/node_modules/
-
